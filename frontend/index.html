@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>INDLAW</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+
+
+<!-- 🔷 NAVBAR -->
+<header class="navbar">
+  <div class="left">
+    <span class="logo">⚖️ INDLAW</span>
+    <button onclick="showSection('law')">Search Law</button>
+    <button onclick="showSection('penalty')">Check Penalty</button>
+  </div>
+
+  <div class="right" id="authSection">
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+  </div>
+
+  <div class="profile-icon" id="profileIcon" onclick="toggleProfile()" style="display:none;">
+    👤
+  </div>
+</header>
+
+<!-- 🔷 MAIN -->
+<div class="main">
+
+  <!-- 📰 SIDEBAR -->
+  <div class="sidebar">
+    <h3>📰 Latest News</h3>
+    <div id="newsList"></div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <div id="lawSection">
+      <h2>Search Law</h2>
+      <input type="text" id="lawInput" placeholder="Enter law name or section">
+      <button id="lawBtn">Search</button>
+      <div id="lawResult"></div>
+    </div>
+
+    <div id="penaltySection" style="display:none;">
+      <h2>Check Penalty</h2>
+      <input type="text" id="violation" placeholder="Violation">
+      <input type="text" id="state" placeholder="State">
+      <button id="penaltyBtn">Check penalty</button>
+      <div id="penaltyResult"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PROFILE BOX -->
+<div id="profileBox" class="profile-box">
+  <h3>User Profile</h3>
+  <p id="pname"></p>
+  <p id="pemail"></p>
+  <p id="pphone"></p>
+  <p id="pstate"></p>
+  <p id="pgender"></p>
+  <p id="pprofile"></p>
+</div>
+<div id="popup" class="popup"></div>
+
+<!-- FOOTER -->
+<footer>
+  <p>Be the smart citizen of India 🇮🇳</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

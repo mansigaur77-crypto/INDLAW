@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page" id="popup" class="popup">
+
+<h1 class ='auth-title'>📝 Register</h1>
+
+<div class="container">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <input type="text" id="phone" placeholder="Phone">
+  
+    <!-- STATE DROPDOWN -->
+    <select id="state">
+      <option value="">Select State</option>
+      <option>Uttar Pradesh</option>
+      <option>Delhi</option>
+      <option>Haryana</option>
+      <option>Maharashtra</option>
+    </select>
+  
+    <!-- GENDER DROPDOWN -->
+    <select id="gender">
+      <option value="">Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+  
+    <!-- PROFILE DROPDOWN -->
+    <select id="profile">
+      <option value="">Student / Working</option>
+      <option>Student</option>
+      <option>Working</option>
+    </select>
+  
+
+  <button onclick="register()">Register</button>
+
+  <p>Already have an account? <a href="login.html">Login</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
